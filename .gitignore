@@ -1,0 +1,37 @@
+# MLflow local tracking files & artifacts
+mlruns/
+mlflow.db
+mlflow.db*
+mlartifacts/
+*.sqlite
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pkl
+*.pt
+*.bin
+*.safetensors
+
+# Hugging Face and model caches
+.cache/
+hf_cache/
+models/
+saved_models/
+
+# System and OS files
+.DS_Store
+Thumbs.db
+
+# Documentation and temporary lab extracts
+lab_book_extracted.txt
+*.docx
+*.zip
+extracted_zip/

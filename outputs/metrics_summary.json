@@ -1,0 +1,16 @@
+{
+  "A": {
+    "accuracy": 0.91,
+    "f1_macro": 0.907928388746803,
+    "avg_latency_ms": 16.842844486236572,
+    "total_inference_s": 1.6842844486236572
+  },
+  "B": {
+    "accuracy": 0.92,
+    "f1_macro": 0.9178981937602627,
+    "avg_latency_ms": 235.1219892501831,
+    "total_inference_s": 23.51219892501831
+  },
+  "delta_primary_metric": 0.009969805013459676,
+  "winner": "A"
+}

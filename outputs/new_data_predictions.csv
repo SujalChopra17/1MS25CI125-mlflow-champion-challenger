@@ -1,0 +1,9 @@
+text,prediction,sentiment,hf_model_id
+The battery life on this phone is fantastic.,1,positive,distilbert-base-uncased-finetuned-sst-2-english
+I waited an hour and the food arrived cold.,0,negative,distilbert-base-uncased-finetuned-sst-2-english
+What a beautifully shot and moving film.,1,positive,distilbert-base-uncased-finetuned-sst-2-english
+The customer support was rude and unhelpful.,0,negative,distilbert-base-uncased-finetuned-sst-2-english
+Absolutely loved the new update!,1,positive,distilbert-base-uncased-finetuned-sst-2-english
+This was a complete waste of money.,0,negative,distilbert-base-uncased-finetuned-sst-2-english
+The hotel room was clean and the staff were lovely.,1,positive,distilbert-base-uncased-finetuned-sst-2-english
+The plot dragged and I nearly fell asleep.,0,negative,distilbert-base-uncased-finetuned-sst-2-english

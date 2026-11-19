@@ -1,0 +1,6 @@
+text,label,pred_A,pred_B,comment
+"the film tunes into a grief that could lead a man across centuries . ",1,0,1,"DistilBERT was misled by the sad word 'grief', whereas RoBERTa recognized the poetic praise of deep emotional resonance."
+"true tale of courage -- and complicity -- at auschwitz is a harrowing drama that tries to tell of the unspeakable . ",1,0,1,"Heavy somber vocabulary ('complicity', 'auschwitz', 'harrowing') misled DistilBERT to negative, but RoBERTa understood the artistic commendation ('courage', 'drama')."
+"i 'll bet the video game is a lot more fun than the film . ",0,1,0,"Subtle sarcasm and backhanded compliment using the word 'fun' tricked DistilBERT into positive, whereas RoBERTa caught the negative comparison."
+"the longer the movie goes , the worse it gets , but it 's actually pretty good in the first few minutes . ",0,1,0,"Contains conflicting clauses; DistilBERT suffered from recency bias on 'pretty good', while RoBERTa correctly weighed 'the worse it gets' as dominant negative."
+"mcconaughey 's fun to watch , the dragons are okay , not much fire in the script . ",1,1,0,"Nuanced review with mixed sentiment; DistilBERT aligned with SST-2 positive annotation based on actor praise, while RoBERTa penalized the weak script critique."
