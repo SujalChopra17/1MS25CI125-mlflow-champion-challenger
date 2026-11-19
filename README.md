@@ -96,7 +96,7 @@ The selection criteria to determine whether Challenger (Model B) replaces Champi
 5. **Decision Logic:**
    - If $\Delta \text{Macro-F1} \ge 0.01$ and latency satisfies the $5\times$ guardrail, Model B is declared **Champion**.
    - If $\Delta \text{Macro-F1} < 0.01$, or if the $5\times$ latency guardrail is violated, Model A remains **Champion**.
-   - If scores are within the margin ($|\Delta| < 0.01$), the faster model is preferred.
+   - If the minimum improvement margin or latency guardrail is not satisfied, Model A remains the Champion.
 
 ---
 
