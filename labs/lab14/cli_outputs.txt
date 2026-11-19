@@ -1,0 +1,63 @@
+﻿======================================================================
+COMMAND 1: python -m mlflow --version
+======================================================================
+mlflow, version 3.18.0
+
+======================================================================
+COMMAND 2: python -m mlflow --help
+======================================================================
+Usage: python -m mlflow [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --version        Show the version and exit.
+  --env-file PATH  Load environment variables from a dotenv file before
+                   executing the command. Variables in the file will be loaded
+                   but won't override existing environment variables.
+  --help           Show this message and exit.
+
+Commands:
+  agent              Coding-agent integrations for MLflow (prototype).
+  ai-commands        Manage MLflow AI commands for LLMs.
+  artifacts          Upload, list, and download artifacts from an MLflow...
+  assistant          MLflow Assistant - AI-powered trace analysis.
+  autolog            Commands for autologging with MLflow.
+  crypto             Commands for managing MLflow's cryptographic...
+  datasets           Manage GenAI evaluation datasets.
+  db                 Commands for managing an MLflow tracking database.
+  demo               Launch MLflow with pre-populated demo data for...
+  deployments        Deploy MLflow models to custom targets.
+  doctor             Prints out useful information for debugging issues with
+                     MLflow.
+  experiments        Manage experiments.
+  gc                 Permanently delete runs in the `deleted` lifecycle stage.
+  mcp                Model Context Protocol (MCP) server for MLflow.
+  migrate-filestore  Migrate MLflow FileStore data to a SQLite database.
+  models             Deploy MLflow models locally.
+  run                Run an MLflow project from the given URI.
+  runs               Manage runs.
+  sagemaker          Serve models on SageMaker.
+  scorers            Manage scorers, including LLM judges.
+  server             Run the MLflow tracking server (UI + REST API).
+  skills             Inspect bundled MLflow skills and pull skills from...
+  traces             Manage traces.
+
+======================================================================
+COMMAND 3: python -m mlflow experiments search
+======================================================================
+Experiment Id    Name                                  Artifact Location   
+---------------  ------------------------------------  --------------------
+0                Default                               mlflow-artifacts:/0 
+1                hf-sentiment-champion-challenger      mlflow-artifacts:/1 
+10               Lab09_Customized_HF_Models            mlflow-artifacts:/10
+11               Linear Regression Experiment          mlflow-artifacts:/11
+12               Linear Regression Metrics Experiment  mlflow-artifacts:/12
+13               Lab11_Model_Registry                  mlflow-artifacts:/13
+14               Lab12_MLflow_Projects                 mlflow-artifacts:/14
+2                Lab03_Tracking_Linear_Regression      mlflow-artifacts:/2 
+3                Lab03_Delivery_Predictor_Server       mlflow-artifacts:/3 
+4                Lab04_Hospital_Stay_Predictor         mlflow-artifacts:/4 
+5                Lab05_Test_Size_Comparison            mlflow-artifacts:/5 
+6                Lab05_Random_State_Sensitivity        mlflow-artifacts:/6 
+7                Lab06_Autolog_vs_Manual               mlflow-artifacts:/7 
+8                Lab07_Shared_Tracking_Server          mlflow-artifacts:/8 
+9                Lab08_MLflow_Models                   mlflow-artifacts:/9 
