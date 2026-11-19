@@ -63,7 +63,7 @@ cd 1MS25CI125-mlflow-champion-challenger
 # 2. Create and activate a Python virtual environment
 python -m venv .venv
 # On Windows:
-.venv\Scripts\activate
+.\.venv\Scripts\Activate.ps1
 # On Linux/macOS:
 # source .venv/bin/activate
 
