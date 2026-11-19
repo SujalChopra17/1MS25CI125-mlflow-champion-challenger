@@ -10,6 +10,23 @@
 
 ---
 
+## Table of Contents
+1. [Student & Institution Information](#student--institution-information)
+2. [Project Title & Objective](#1-project-title--objective)
+3. [Task and Models](#2-task-and-models)
+4. [Setup and Execution Instructions](#3-setup-and-execution-instructions)
+5. [Champion–Challenger Decision Rule](#4-championchallenger-decision-rule)
+6. [Evaluation Results](#5-evaluation-results)
+7. [Decision & Technical Justification](#6-decision--technical-justification-viva-analysis)
+8. [Qualitative Error & Disagreement Analysis](#7-qualitative-error--disagreement-analysis)
+9. [MLflow Architecture & Model Registry](#8-mlflow-architecture--artifacts)
+10. [Visual Evidence & Screenshots](#9-visual-evidence--screenshots)
+11. [Generated Artifacts Inventory](#10-generated-artifacts-inventory)
+12. [All 14 Laboratory Exercises](#11-all-14-laboratory-exercises-part-b)
+13. [Limitations & AI Declaration](#12-limitations--ai-declaration)
+
+---
+
 ## 1. Project Title & Objective
 **Title:** Champion–Challenger Model Comparison with Hugging Face and MLflow  
 **Objective:**  
@@ -157,8 +174,24 @@ Predictions are loaded dynamically using `models:/sentiment-model@champion`. The
 
 ---
 
-## 9. Generated Artifacts Inventory
-The following files are generated and tracked in the `outputs/` directory:
+## 9. Visual Evidence & Screenshots
+
+### 9.1 MLflow Experiment Comparison
+The comparison view across all candidate model runs and summary comparison run in the MLflow UI:
+![MLflow Run Comparison](screenshots/mlflow_compare.png)
+
+### 9.2 MLflow Model Registry Aliases (`@champion` and `@challenger`)
+Automated registration showing Version 1 assigned `@champion` and Version 2 assigned `@challenger`:
+![MLflow Model Registry Aliases](screenshots/model_registry_aliases.png)
+
+### 9.3 Decoupled Champion Inference (`predict_from_mlflow.py`)
+Inference executed strictly through `models:/sentiment-model@champion` on unseen test sentences:
+![Champion Predictions Terminal](screenshots/champion_predictions.png)
+
+---
+
+## 10. Generated Artifacts Inventory
+The following evaluation files are tracked in the `outputs/` directory:
 - `outputs/predictions_distilbert.csv`: Test sentences, labels, and Model A predictions.
 - `outputs/predictions_roberta.csv`: Test sentences, labels, and Model B predictions.
 - `outputs/metrics_summary.json`: JSON summary of accuracy, F1, latency, delta, and winner.
@@ -170,7 +203,31 @@ The following files are generated and tracked in the `outputs/` directory:
 
 ---
 
-## 10. Limitations & AI Declaration
+## 11. All 14 Laboratory Exercises (Part B)
+Each of the 14 assigned exercises from the course lab book has been implemented with clean, reproducible Python scripts, actual generated outputs, and individual observation reports:
+
+| Lab Directory | Topic / Focus | Core Script | Output / Observation |
+| :--- | :--- | :--- | :--- |
+| `labs/lab01/` | Linear Regression & Delivery Time Predictor | `baseline_model.py`, `delivery_time_predictor.py` | [observations.md](labs/lab01/observations.md) |
+| `labs/lab02/` | First MLflow Run & `mlruns` Inspection | `firstmlflow_run.py`, `delivery_time_predictor_mlflow.py` | [observations.md](labs/lab02/observations.md) |
+| `labs/lab03/` | Tracking Server & UI Entity Mapping | `tracking_linear_regression.py`, `tracking_delivery_predictor.py` | [observations.md](labs/lab03/observations.md) |
+| `labs/lab04/` | MLflow Logging Functions (Hospital Stay Predictor) | `hospital_stay_predictor.py` | [observations.md](labs/lab04/observations.md) |
+| `labs/lab05/` | Multi-Run Experimentation & Hyperparameter Tuning | `multiple_runs.py` | [observations.md](labs/lab05/observations.md) |
+| `labs/lab06/` | Manual Logging vs. Autologging Comparison | `autolog_vs_manual.py` | [observations.md](labs/lab06/observations.md) |
+| `labs/lab07/` | Compare Runs & Run Lineage | `linear_regression_run1.py`, `linear_regression_run2.py` | [observations.md](labs/lab07/observations.md) |
+| `labs/lab08/` | Logging & Loading Models via `mlflow.sklearn` | `model_component.py`, `load_and_predict.py` | [observations.md](labs/lab08/observations.md) |
+| `labs/lab09/` | Custom PyFunc Model Wrapper for Hugging Face | `log_custom_hf_model.py`, `predict_custom_hf_model.py` | [observations.md](labs/lab09/observations.md) |
+| `labs/lab10/` | Custom Multi-Metric Model Evaluation | `evaluate_experiments.py` | [observations.md](labs/lab10/observations.md) |
+| `labs/lab11/` | MLflow Model Registry (Aliases, Versions, Tags) | `registry.py`, `predict_champion.py` | [observations.md](labs/lab11/observations.md) |
+| `labs/lab12/` | MLflow Projects & Packaging (`MLproject`) | `train.py`, `MLproject` | [observations.md](labs/lab12/observations.md) |
+| `labs/lab13/` | MLflow Tracking Client API | `client_demo.py` | [observations.md](labs/lab13/observations.md) |
+| `labs/lab14/` | MLflow CLI Utilities & Automation | `cli_outputs.txt` | [observations.md](labs/lab14/observations.md) |
+
+The complete consolidated synthesis of all 14 labs is documented in [report/lab_observations.md](report/lab_observations.md).
+
+---
+
+## 12. Limitations & AI Declaration
 - **Sample Size Limitation:** Evaluating on 100 samples provided high execution speed and reproducibility on CPU, but a larger test set (e.g., 872 SST-2 validation samples) would provide narrower confidence intervals.
 - **Hardware Constraint:** RoBERTa Large evaluation on CPU takes ~23.5 seconds; GPU acceleration would lower latency differences but would not alter parameter size differences.
 - **AI Tools Declaration:** In compliance with course policies, development of evaluation scripts, MLflow wrappers, and documentation was assisted by an AI agent (Google Antigravity). All code, logic, decision rules, and mathematical outputs have been reviewed, verified, executed, and understood for viva examination.
