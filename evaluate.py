@@ -74,10 +74,10 @@ mA, rA = evaluate("A")
 mB, rB = evaluate("B")
 
 delta = mB[PRIMARY] - mA[PRIMARY]
-if delta >= MARGIN:
-    winner = "B" if mB["avg_latency_ms"] <= LAT_X * mA["avg_latency_ms"] else "A"
-elif delta > -MARGIN:
-    winner = "A" if mA["avg_latency_ms"] <= mB["avg_latency_ms"] else "B"
+
+if (delta >= MARGIN and
+    mB["avg_latency_ms"] <= LAT_X * mA["avg_latency_ms"]):
+    winner = "B"
 else:
     winner = "A"
 
