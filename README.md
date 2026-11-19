@@ -6,7 +6,7 @@
 - **College:** Ramaiah Institute of Technology, Bengaluru
 - **Department:** Department of Computer Science & Engineering (Artificial Intelligence & Machine Learning)
 - **Course:** MLOps with MLflow (Skill Lab)
-- **GitHub Repository:** `1MS25CI125-mlflow-champion-challenger`
+- **GitHub Repository:** [https://github.com/SujalChopra17/1MS25CI125-mlflow-champion-challenger](https://github.com/SujalChopra17/1MS25CI125-mlflow-champion-challenger)
 
 ---
 
@@ -22,8 +22,7 @@
 9. [MLflow Architecture & Model Registry](#8-mlflow-architecture--artifacts)
 10. [Visual Evidence & Screenshots](#9-visual-evidence--screenshots)
 11. [Generated Artifacts Inventory](#10-generated-artifacts-inventory)
-12. [All 14 Laboratory Exercises](#11-all-14-laboratory-exercises-part-b)
-13. [Limitations & AI Declaration](#12-limitations--ai-declaration)
+12. [Limitations & AI Declaration](#11-limitations--ai-declaration)
 
 ---
 
@@ -58,7 +57,7 @@ To establish an end-to-end MLOps pipeline for comparing two candidate NLP models
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/1MS25CI125/1MS25CI125-mlflow-champion-challenger.git
+git clone https://github.com/SujalChopra17/1MS25CI125-mlflow-champion-challenger.git
 cd 1MS25CI125-mlflow-champion-challenger
 
 # 2. Create and activate a Python virtual environment
@@ -203,31 +202,7 @@ The following evaluation files are tracked in the `outputs/` directory:
 
 ---
 
-## 11. All 14 Laboratory Exercises (Part B)
-Each of the 14 assigned exercises from the course lab book has been implemented with clean, reproducible Python scripts, actual generated outputs, and individual observation reports:
-
-| Lab Directory | Topic / Focus | Core Script | Output / Observation |
-| :--- | :--- | :--- | :--- |
-| `labs/lab01/` | Linear Regression & Delivery Time Predictor | `baseline_model.py`, `delivery_time_predictor.py` | [observations.md](labs/lab01/observations.md) |
-| `labs/lab02/` | First MLflow Run & `mlruns` Inspection | `firstmlflow_run.py`, `delivery_time_predictor_mlflow.py` | [observations.md](labs/lab02/observations.md) |
-| `labs/lab03/` | Tracking Server & UI Entity Mapping | `tracking_linear_regression.py`, `tracking_delivery_predictor.py` | [observations.md](labs/lab03/observations.md) |
-| `labs/lab04/` | MLflow Logging Functions (Hospital Stay Predictor) | `hospital_stay_predictor.py` | [observations.md](labs/lab04/observations.md) |
-| `labs/lab05/` | Multi-Run Experimentation & Hyperparameter Tuning | `multiple_runs.py` | [observations.md](labs/lab05/observations.md) |
-| `labs/lab06/` | Manual Logging vs. Autologging Comparison | `autolog_vs_manual.py` | [observations.md](labs/lab06/observations.md) |
-| `labs/lab07/` | Compare Runs & Run Lineage | `linear_regression_run1.py`, `linear_regression_run2.py` | [observations.md](labs/lab07/observations.md) |
-| `labs/lab08/` | Logging & Loading Models via `mlflow.sklearn` | `model_component.py`, `load_and_predict.py` | [observations.md](labs/lab08/observations.md) |
-| `labs/lab09/` | Custom PyFunc Model Wrapper for Hugging Face | `log_custom_hf_model.py`, `predict_custom_hf_model.py` | [observations.md](labs/lab09/observations.md) |
-| `labs/lab10/` | Custom Multi-Metric Model Evaluation | `evaluate_experiments.py` | [observations.md](labs/lab10/observations.md) |
-| `labs/lab11/` | MLflow Model Registry (Aliases, Versions, Tags) | `registry.py`, `predict_champion.py` | [observations.md](labs/lab11/observations.md) |
-| `labs/lab12/` | MLflow Projects & Packaging (`MLproject`) | `train.py`, `MLproject` | [observations.md](labs/lab12/observations.md) |
-| `labs/lab13/` | MLflow Tracking Client API | `client_demo.py` | [observations.md](labs/lab13/observations.md) |
-| `labs/lab14/` | MLflow CLI Utilities & Automation | `cli_outputs.txt` | [observations.md](labs/lab14/observations.md) |
-
-The complete consolidated synthesis of all 14 labs is documented in [report/lab_observations.md](report/lab_observations.md).
-
----
-
-## 12. Limitations & AI Declaration
+## 11. Limitations & AI Declaration
 - **Sample Size Limitation:** Evaluating on 100 samples provided high execution speed and reproducibility on CPU, but a larger test set (e.g., 872 SST-2 validation samples) would provide narrower confidence intervals.
 - **Hardware Constraint:** RoBERTa Large evaluation on CPU takes ~23.5 seconds; GPU acceleration would lower latency differences but would not alter parameter size differences.
 - **AI Tools Declaration:** In compliance with course policies, development of evaluation scripts, MLflow wrappers, and documentation was assisted by an AI agent (Google Antigravity). All code, logic, decision rules, and mathematical outputs have been reviewed, verified, executed, and understood for viva examination.
